@@ -118,21 +118,21 @@ for i in range(width):
             # RGB value of light salmon.<br>
             pixel_map[i, j] = (216,191,216)<br>
   
-# The following loop will create a cross<br>
-# of color blue.<br>
+#The following loop will create a cross<br>
+#of color blue.<br>
 for i in range(width):<br>
     
     # RGB value of Blue.<br>
     pixel_map[i, i] = (0, 0, 255)<br>
     pixel_map[i, width-i-1] = (0, 0, 255)<br>
   
-# Saving the final output<br>
-# as "output.png":<br>
+#Saving the final output<br>
+#as "output.png":<br>
 #input_image.save("output", format="png")<br>
 plt.imshow(input_image)<br>
 plt.show()  <br>
-# use input_image.show() to see the image on the<br>
-# output screen.<br>
+#use input_image.show() to see the image on the<br>
+#output screen.<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/180199536-48a0e2c4-dc68-460f-9780-4905bb774d57.png)
