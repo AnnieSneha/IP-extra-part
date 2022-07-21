@@ -138,4 +138,19 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/180199536-48a0e2c4-dc68-460f-9780-4905bb774d57.png)
 
 
+from PIL import Image:<br>
+import numpy as np:<br>
+w, h = 512, 512:<br>
+data = np.zeros((h, w, 3), dtype=np.uint8):<br>
+data[0:100, 0:100] = [255, 0, 0]:<br>
+data[100:200, 100:200] = [255, 0, 255]:<br>
+data[200:300, 200:300] = [0, 255, 0]:<br>
+# red patch in upper left:<br>
+img = Image.fromarray(data, 'RGB'):<br>
+img.save('my.png'):<br>
+plt.imshow(img):<br>
+plt.show():<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/180201789-e09b2572-9b3c-4b0e-ac56-aea337ad3d32.png)
 
