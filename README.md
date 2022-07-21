@@ -87,35 +87,35 @@ OUTPUT:<br>
 from PIL import Image<br>
 import matplotlib.pyplot as plt<br>
   
-# Create an image as input:<br>
+#Create an image as input:<br>
 input_image = Image.new(mode="RGB", size=(1000, 1000),color="pink")<br>
   
-# save the image as "input.png"<br>
+#save the image as "input.png"<br>
 #(not mandatory)<br>
 #input_image.save("input", format="png")<br>
   
-# Extracting pixel map:<br>
+#Extracting pixel map:<br>
 pixel_map = input_image.load()<br>
   
-# Extracting the width and height<br>
-# of the image:<br>
+#Extracting the width and height<br>
+#of the image:<br>
 width, height = input_image.size<br>
 z = 100<br>
 for i in range(width):
     for j in range(height):<br>
         
-        # the following if part will create<br>
-        # a square with color orange<br>
+        #the following if part will create<br>
+        #a square with color orange<br>
         if((i >= z and i <= width-z) and (j >= z and j <= height-z)):<br>
             
-            # RGB value of orange.<br>
+            #RGB value of orange.<br>
             pixel_map[i, j] = (230,230,250)<br>
   
-        # the following else part will fill the<br>
-        # rest part with color light salmon.<br>
+        #the following else part will fill the<br>
+        #rest part with color light salmon.<br>
         else:<br>
             
-            # RGB value of light salmon.<br>
+            #RGB value of light salmon.<br>
             pixel_map[i, j] = (216,191,216)<br>
   
 #The following loop will create a cross<br>
