@@ -154,3 +154,37 @@ plt.show():<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/180201789-e09b2572-9b3c-4b0e-ac56-aea337ad3d32.png)
 
+#MAX
+import numpy as np
+# Create matrix
+matrix = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+# Return maximum element
+np.max(matrix)
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/181233563-bc1a51ae-8cfc-4145-a405-03af4372f016.png)
+
+import numpy as np
+# Create matrix
+matrix = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+# Return maximum element
+np.min(matrix)
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/181233654-74294a94-9a16-40cb-91a5-6468c974c66f.png)
+
+#Average
+import imageio
+import matplotlib.pyplot as plt
+img=imageio.imread("21.jpg")
+plt.imshow(img)
+np.average(img)
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97939284/181234309-6da80feb-9e7a-43e8-b7c2-1902bebb190a.png)
+
+
