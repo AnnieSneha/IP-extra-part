@@ -155,75 +155,75 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/180201789-e09b2572-9b3c-4b0e-ac56-aea337ad3d32.png)
 
 #MAX
-import numpy as np
-# Create matrix
-matrix = np.array([[1, 2, 3],
-                   [4, 5, 6],
-                   [7, 8, 9]])
+import numpy as np<br>
+# Create matrix<br>
+matrix = np.array([[1, 2, 3],<br>
+                   [4, 5, 6],<br>
+                   [7, 8, 9]])<br>
 # Return maximum element
-np.max(matrix)
+np.max(matrix)<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/181233563-bc1a51ae-8cfc-4145-a405-03af4372f016.png)
 
-import numpy as np
-# Create matrix
-matrix = np.array([[1, 2, 3],
-                   [4, 5, 6],
-                   [7, 8, 9]])
+import numpy as np<br>
+# Create matrix<br>
+matrix = np.array([[1, 2, 3],<br>
+                   [4, 5, 6],<br>
+                   [7, 8, 9]])<br>
 # Return maximum element
-np.min(matrix)
+np.min(matrix)<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/181233654-74294a94-9a16-40cb-91a5-6468c974c66f.png)
 
 #Average
-import imageio
-import matplotlib.pyplot as plt
-img=imageio.imread("21.jpg")
-plt.imshow(img)
-np.average(img)
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+img=imageio.imread("21.jpg")<br>
+plt.imshow(img)<br>
+np.average(img)<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97939284/181234309-6da80feb-9e7a-43e8-b7c2-1902bebb190a.png)
+![image](https://user-images.githubusercontent.com/97939284/181234309-6da80feb-9e7a-43e8-b7c2-1902bebb190a.png)<br>
 
 
-import numpy as np
-from PIL import Image
-import matplotlib.pyplot as plt
-def printPattern(n):
+import numpy as np<br>
+from PIL import Image<br>
+import matplotlib.pyplot as plt<br>
+def printPattern(n):<br>
 
-    arraySize = n * 2 - 1;
-    result = [[0 for x in range(arraySize)]
-                 for y in range(arraySize)];
+    arraySize = n * 2 - 1;<br>
+    result = [[0 for x in range(arraySize)]<br>
+                 for y in range(arraySize)];<br>
          
-    # Fill the values
-    for i in range(arraySize):
-        for j in range(arraySize):
-            if(abs(i - (arraySize // 2)) >
-               abs(j - (arraySize // 2))):
-                result[i][j] = abs(i - (arraySize // 2));
-            else:
-                result[i][j] = abs(j - (arraySize // 2));
+    # Fill the values<br>
+    for i in range(arraySize):<br>
+        for j in range(arraySize):<br>
+            if(abs(i - (arraySize // 2)) ><br>
+               abs(j - (arraySize // 2))):<br>
+                result[i][j] = abs(i - (arraySize // 2));<br>
+            else:<br>
+                result[i][j] = abs(j - (arraySize // 2));<br>
              
-    # Print the array
-    for i in range(arraySize):
-        for j in range(arraySize):
-            print(result[i][j], end = " ");
-        print("");
+    # Print the array<br>
+    for i in range(arraySize):<br>
+        for j in range(arraySize):<br>
+            print(result[i][j], end = " ");<br>
+        print("");<br>
  
-# Driver Code
-n = 3;
+# Driver Code<br>
+n = 3;<br>
  
-printPattern(n);
-w, h = n,n
-arraySize = np.zeros((h, w, 3))# dtype=np.uint8)
-arraySize[0:n, 0:n] = [255,0,0] # red patch in upper left
-#arraySize[0:n, 0:n] = [255, 0, 0]
-#arraySize[n:0,n:0] = [120,200,255]
-img = Image.fromarray(arraySize, 'RGB')
-plt.imshow(img)
-plt.show()
-#img.save('my.png')
-#img.show()
+printPattern(n);<br>
+w, h = n,n<br>
+arraySize = np.zeros((h, w, 3))# dtype=np.uint8)<br>
+arraySize[0:n, 0:n] = [255,0,0] # red patch in upper left<br>
+#arraySize[0:n, 0:n] = [255, 0, 0]<br>
+#arraySize[n:0,n:0] = [120,200,255]<br>
+img = Image.fromarray(arraySize, 'RGB')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+#img.save('my.png')<br>
+#img.show()<br>
 
