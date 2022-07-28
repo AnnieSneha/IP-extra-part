@@ -212,7 +212,7 @@ def printPattern(n):<br>
             print(result[i][j], end = " ");<br>
         print("");<br>
  
-# Driver Code<br>
+#Driver Code<br>
 n = 3;<br>
  
 printPattern(n);<br>
@@ -227,3 +227,4 @@ plt.show()<br>
 #img.save('my.png')<br>
 #img.show()<br>
 
+![image](https://user-images.githubusercontent.com/97939284/181448195-1d1b405d-3c05-4bf4-895b-c335c7e7655f.png)
