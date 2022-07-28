@@ -188,3 +188,42 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97939284/181234309-6da80feb-9e7a-43e8-b7c2-1902bebb190a.png)
 
 
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+def printPattern(n):
+
+    arraySize = n * 2 - 1;
+    result = [[0 for x in range(arraySize)]
+                 for y in range(arraySize)];
+         
+    # Fill the values
+    for i in range(arraySize):
+        for j in range(arraySize):
+            if(abs(i - (arraySize // 2)) >
+               abs(j - (arraySize // 2))):
+                result[i][j] = abs(i - (arraySize // 2));
+            else:
+                result[i][j] = abs(j - (arraySize // 2));
+             
+    # Print the array
+    for i in range(arraySize):
+        for j in range(arraySize):
+            print(result[i][j], end = " ");
+        print("");
+ 
+# Driver Code
+n = 3;
+ 
+printPattern(n);
+w, h = n,n
+arraySize = np.zeros((h, w, 3))# dtype=np.uint8)
+arraySize[0:n, 0:n] = [255,0,0] # red patch in upper left
+#arraySize[0:n, 0:n] = [255, 0, 0]
+#arraySize[n:0,n:0] = [120,200,255]
+img = Image.fromarray(arraySize, 'RGB')
+plt.imshow(img)
+plt.show()
+#img.save('my.png')
+#img.show()
+
