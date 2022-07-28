@@ -228,3 +228,16 @@ plt.show()<br>
 #img.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97939284/181448195-1d1b405d-3c05-4bf4-895b-c335c7e7655f.png)
+
+
+
+import matplotlib.pyplot as plt
+M = ([1,2,3,4,5],
+     [6,7,8,9,10],
+     [11,12,13,14,15],
+     [16,17,18,19,20] )    
+plt.imshow(M)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/97939284/181448367-75355d83-998a-40bd-bd13-b50dc0367ed4.png)
+
